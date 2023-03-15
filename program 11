@@ -1,9 +1,8 @@
-student_marks = Hash.new 0
-student_marks['Java'] = 74
-student_marks['DS'] = 89
-student_marks['Python'] = 99
-total_marks = 0
-student_marks.each {|key,value|
-              total_marks +=value
-        }
-puts "Total Marks: "+total_marks.to_s
+set counter 5
+set number $counter
+set factorial 1
+while {$counter > 0} {
+set factorial [expr $factorial * $counter]
+incr counter -1
+}
+puts "factorial for $number is $factorial"
